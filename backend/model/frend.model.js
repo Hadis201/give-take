@@ -5,8 +5,8 @@ const friendSchema = new mongoose.Schema({
     receiver: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
     status: {
         type: String,
-        enum: ["pending", "accepted", "rejected","Added"],
-        default: "Added"
+        enum: ["pending", "accepted", "rejected","Add Friend"],
+        default: "Add Friend"
     }
 }, { timestamps: true });
 
